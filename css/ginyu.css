@@ -634,8 +634,12 @@ header{
 @media (max-height: 400px) and (orientation: landscape) {
 
   header{
-    height: 80px;
+    height: 70px;
 }
+
+.slide {
+    height: 100vh;
+  }
 
 .logo img{
   height: 46px;
@@ -681,6 +685,14 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
+  }
+
+  .arrow {
+      margin-right: 11px;
+  }
+
+  .arrow img {
+      height: 75px;
   }
 }
 
