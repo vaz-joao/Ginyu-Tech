@@ -634,7 +634,7 @@ header{
 @media (max-height: 400px) and (orientation: landscape) {
 
   header{
-    height: 70px;
+    height: 10px;
 }
 
 .slide {
@@ -687,12 +687,17 @@ header{
     line-height: 35px;
   }
 
+   .arrowcontainer {
+    height: 96.5%;
+
+  }
+
   .arrow {
       margin-right: 11px;
   }
 
   .arrow img {
-      height: 75px;
+      height: 35px;
   }
 }
 
