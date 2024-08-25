@@ -397,7 +397,7 @@ header{
   padding: 33px 0;
   text-decoration: none;
   transition: 1.0s;
-  margin-bottom: 40px; /* Adds space between the text and the button */
+  margin-bottom: 40px;
   margin-left: 40px;
 }
 
@@ -561,6 +561,7 @@ header{
 
 .dotsContainer {
   bottom: 65px;
+  display: none;
 }
 }
 
@@ -629,6 +630,45 @@ header{
 }
 
 }
+
+@media (max-height: 400px) and (orientation: landscape) {
+  .slide {
+    width: 100%;
+    height: 55vh; 
+  }
+
+  .textbtncontainer {
+    left: 8%;
+    top: 15%;
+  }
+
+  .text-overlay {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .text-overlay2 {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .btnabout,
+  .btnbook {
+    font-size: 14px; 
+    width: 120px;
+    height: 25px;
+    padding: 20px 0;
+  }
+
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
 
 
 /*   
