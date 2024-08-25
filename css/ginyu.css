@@ -676,16 +676,12 @@ header{
 
   .prev,
   .next {
-    width: 35px;
-    height: 35px;
-    margin-top: 30%;
-    font-size: 22px;
-    line-height: 35px;
+    margin-top: 10%;
   }
 
-  .arrowcontainer {
-    display: none;
-  }
+  .arrow {
+   display: none;
+}
 }
 
 
