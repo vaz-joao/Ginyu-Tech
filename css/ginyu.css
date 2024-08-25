@@ -647,7 +647,7 @@ header{
 
   .slide {
     width: 100%;
-    height: 65vh; /* Aumenta a altura das imagens dos slides */
+    height: 85vh; /* Aumenta a altura das imagens dos slides */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -687,7 +687,7 @@ header{
   }
 
   .arrowcontainer {
-    height: 80%; /* Ajusta a posição da seta mais para cima */
+    height: 90%; /* Ajusta a posição da seta mais para cima */
   }
 }
 
