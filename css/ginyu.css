@@ -648,12 +648,14 @@ header{
 
   .slide {
     width: 100%;
-    height: 65vh; /* Aumenta a altura das imagens */
+    height: 70vh; /* Aumenta a altura das imagens */
   }
 
   .textbtncontainer {
-    left: 18%;
-    top: 13%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+    text-align: center;
   }
 
   .text-overlay {
@@ -664,6 +666,7 @@ header{
   .text-overlay2 {
     font-size: 14px;
     max-width: 90%;
+    margin: 0 auto; /* Centraliza o texto */
   }
 
   .btnabout,
@@ -672,16 +675,23 @@ header{
     width: 100px;    /* Ajusta a largura dos botões */
     height: 20px;    /* Ajusta a altura dos botões */
     padding: 15px 0;
+    display: inline-block;
+    margin-top: 10px; /* Espaçamento entre os botões */
   }
 
   .prev,
   .next {
-    margin-top: 10%;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    line-height: 35px;
+    top: 50%; /* Move as setas um pouco para baixo */
+    transform: translateY(50%);
   }
 
-  .arrow {
-   display: none;
-}
+  .arrowcontainer {
+    display: block; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
 }
 
 
