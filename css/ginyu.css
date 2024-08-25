@@ -633,32 +633,31 @@ header{
 
 @media (max-height: 400px) and (orientation: landscape) {
 
-  header{
-    height: 10px;
-}
-
-.slide {
-    height: 200vh;
+  header {
+    height: 80px;
   }
 
-.logo img{
-  height: 46px;
-  padding: 0 15px;
-  /* cursor: pointer; */
-}
-.logo p{
-  font-size: 21px;
-  /* margin-bottom: 47px; */
-}
+  .logo img {
+    height: 46px;
+    padding: 0 15px;
+  }
+  .logo p {
+    font-size: 21px;
+  }
 
   .slide {
     width: 100%;
-    height: 55vh; 
+    height: 65vh; /* Aumenta a altura das imagens dos slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .textbtncontainer {
-    left: 18%;
-    top: 13%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centraliza os textos e botões */
+    text-align: center;
   }
 
   .text-overlay {
@@ -687,17 +686,8 @@ header{
     line-height: 35px;
   }
 
-   .arrowcontainer {
-      margin-bottom: 50px;
-
-  }
-
-  .arrow {
-      margin-right: 11px;
-  }
-
-  .arrow img {
-      height: 35px;
+  .arrowcontainer {
+    height: 80%; /* Ajusta a posição da seta mais para cima */
   }
 }
 
