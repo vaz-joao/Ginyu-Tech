@@ -641,23 +641,19 @@ header{
     height: 46px;
     padding: 0 15px;
   }
+  
   .logo p {
     font-size: 21px;
   }
 
   .slide {
     width: 100%;
-    height: 85vh; /* Aumenta a altura das imagens dos slides */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 65vh; /* Aumenta a altura das imagens */
   }
 
   .textbtncontainer {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Centraliza os textos e botões */
-    text-align: center;
+    left: 18%;
+    top: 13%;
   }
 
   .text-overlay {
@@ -672,24 +668,26 @@ header{
 
   .btnabout,
   .btnbook {
-    font-size: 14px; 
-    width: 120px;
-    height: 25px;
-    padding: 20px 0;
+    font-size: 12px; /* Diminui o tamanho dos botões */
+    width: 100px;    /* Ajusta a largura dos botões */
+    height: 20px;    /* Ajusta a altura dos botões */
+    padding: 15px 0;
   }
 
   .prev,
   .next {
     width: 35px;
     height: 35px;
+    margin-top: 30%;
     font-size: 22px;
     line-height: 35px;
   }
 
   .arrowcontainer {
-    height: 90%; /* Ajusta a posição da seta mais para cima */
+    display: none;
   }
 }
+
 
 
 
