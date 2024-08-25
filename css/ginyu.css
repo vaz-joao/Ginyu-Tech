@@ -638,7 +638,7 @@ header{
 }
 
 .slide {
-    height: 100vh;
+    height: 200vh;
   }
 
 .logo img{
@@ -688,7 +688,7 @@ header{
   }
 
    .arrowcontainer {
-    height: 96.5%;
+      margin-bottom: 50px;
 
   }
 
