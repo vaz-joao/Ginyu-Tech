@@ -632,14 +632,29 @@ header{
 }
 
 @media (max-height: 400px) and (orientation: landscape) {
+
+  header{
+    height: 80px;
+}
+
+.logo img{
+  height: 46px;
+  padding: 0 15px;
+  /* cursor: pointer; */
+}
+.logo p{
+  font-size: 21px;
+  /* margin-bottom: 47px; */
+}
+
   .slide {
     width: 100%;
     height: 55vh; 
   }
 
   .textbtncontainer {
-    left: 8%;
-    top: 15%;
+    left: 18%;
+    top: 13%;
   }
 
   .text-overlay {
