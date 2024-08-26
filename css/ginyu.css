@@ -677,7 +677,7 @@ header{
 
   .text-overlay2 {
     font-size: 14px;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .btnabout,
@@ -694,11 +694,19 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
-    bottom: 2%;
+    bottom: 30%;
   }
 
   .arrowcontainer {
-    height: 30%; /* Ajusta a posição da seta mais para cima */
+    display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .arrow img {
+    display: none;
   }
 }
 
