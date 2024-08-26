@@ -1561,10 +1561,10 @@ header{
     }
   
     .social {
-      position: absolute; /* Alterado para absolute */
+      position: absolute; 
       left: 0;
-      top: 0; /* Posicionado no topo da imagem */
-      bottom: 0; /* Estende até o fundo da imagem */
+      top: 0;
+      bottom: 0;
       width: 30px;
       background: rgba(59, 0, 136, 0.5);
       text-align: center;
@@ -1604,7 +1604,7 @@ header{
     }
   
     .membro {
-      flex-direction: column; /* Coloca a barra social abaixo da imagem em telas menores */
+      flex-direction: column;
     }
   
     .membro img {
@@ -1636,7 +1636,7 @@ header{
     
     .social {
       width: 30px;
-      margin-right: 0; /* Remove o espaço lateral quando a barra está abaixo da imagem */
+      margin-right: 0;
     }
     
     .social a {
