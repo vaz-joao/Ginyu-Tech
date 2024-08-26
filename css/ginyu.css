@@ -268,7 +268,7 @@ header{
   
   .opcoes a{
       padding: 15px 22px;
-      font-size: 24px;
+      font-size: 17px;
       margin: 0px 5px;
   }
 
@@ -277,7 +277,7 @@ header{
 }
 
 .opcoes ul {
-    gap: 25px;
+    gap: 21px;
     
 }
 }
@@ -946,6 +946,7 @@ header{
 }
 
 .textabout h4 {
+  font-size: 12;
   margin-right: -3px;
 }
 
@@ -1049,14 +1050,14 @@ header{
 
 .faixaroxabemdaorapraseparar p {
     margin: 0;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .faixaroxabemdaorapraseparar h1 {
     margin-top: 7px; /* Espaço entre o texto e o nome do autor */
     margin-bottom: 0; /* Remove a margem inferior padrão do h1 */
     padding: 10px;
-    font-size: 12px;
+    font-size: 10px;
     /* margin-left: 200px; */
     font-family: 'EB Garamond', serif;
     color: rgb(248, 248, 248);  
@@ -1166,11 +1167,11 @@ header{
 
 .vision h2{
     margin: 20px 0;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .vision h3 {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 40px;
 }
 }
@@ -1296,7 +1297,7 @@ header{
 }
 
 .btnbookadex {
-  font-size: 15px;
+  font-size: 16px;
   max-width: 300px; 
   max-height: 70px;
   padding: 35px 20px;
@@ -1346,18 +1347,19 @@ header{
     margin: 90px 0 75px 0;
 }
   .bookdex h4{
-    text-align: center;
-    font-size: 15px;
+    text-align: justify;
+    font-size: 13px;
 
 }
 
 .bookdex{
 
   margin-top: -110px;
-  max-width: 650px;
+  max-width: 320px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: 19px;
 }
 
 }
@@ -1502,72 +1504,115 @@ header{
 
   }
 
-  @media(max-width: 968px) {
-
-    .membros {
-      margin-left: 12%;
-    }
-
-    .membro img {
-      width: 200px;
-      height: 200px;
-    }
-    
-    .membro-info-content {
-
-      bottom: 25px;
-      left: 15px;
-      right: 15px;
-    }
-    
-    .membro-info-content h4 {
-      font-weight: 700;
-      margin-bottom: 2px;
-      font-size: 13px;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-    }
-    
-    .membro-info-content span {
-      font-style: italic;
-      font-family: "Poppins", sans-serif;
-      display: block;
-      font-size: 10px;
-      color: #fff;
-    }
-    
-    .social {
-      width: 40px;
-    }
-    
-    .social a {
-      margin-top: 10px;
-    }
-    
-    
-    .social i {
-      font-size: 16px;
-    }
-    
-    .membro:hover .membro-info-content {
-      bottom: 25px;
-    }
-
-  }
-
-  @media(max-width: 558px) {
+  @media (max-width: 948px) {
 
     .membros {
       margin-left: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
-
+  
+    .membro {
+      position: relative;
+      text-align: center;
+      margin: 0 10px 50px 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .membro img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .membro-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(0deg, rgba(41, 11, 65, 0.3) 0%, rgba(41, 11, 65, 0.3) 20%, rgba(174, 0, 255, 0) 100%);
+      opacity: 1;
+    }
+  
+    .membro-info-content {
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      right: 10px;
+    }
+  
+    .membro-info-content h4 {
+      font-weight: 700;
+      margin-bottom: 2px;
+      font-size: 13px;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+    }
+  
+    .membro-info-content span {
+      font-style: italic;
+      font-family: "Poppins", sans-serif;
+      display: block;
+      font-size: 10px;
+      color: #fff;
+    }
+  
+    .social {
+      position: absolute; /* Alterado para absolute */
+      left: 0;
+      top: 0; /* Posicionado no topo da imagem */
+      bottom: 0; /* Estende até o fundo da imagem */
+      width: 30px;
+      background: rgba(59, 0, 136, 0.5);
+      text-align: center;
+    }
+  
+    .social a {
+      display: block;
+      color: #fff;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+  
+    .social a:hover {
+      color: rgb(250, 215, 162);
+      transition: 1.0s;
+    }
+  
+    .social i {
+      font-size: 13px;
+      margin: 0 2px;
+    }
+  
+    .membro:hover .membro-info-content {
+      bottom: 20px;
+    }
+  
+    .membro:hover .social {
+      left: 0;
+    }
+  }
+  
+  
+  @media (max-width: 558px) {
+  
+    .membros {
+      margin-left: 20%;
+    }
+  
+    .membro {
+      flex-direction: column; /* Coloca a barra social abaixo da imagem em telas menores */
+    }
+  
     .membro img {
       width: 200px;
       height: 200px;
     }
     
     .membro-info-content {
-
       bottom: 25px;
       left: 15px;
       right: 15px;
@@ -1590,22 +1635,23 @@ header{
     }
     
     .social {
-      width: 40px;
+      width: 30px;
+      margin-right: 0; /* Remove o espaço lateral quando a barra está abaixo da imagem */
     }
     
     .social a {
       margin-top: 10px;
     }
     
-    
     .social i {
-      font-size: 16px;
+      font-size: 14px;
     }
     
     .membro:hover .membro-info-content {
       bottom: 25px;
     }
   }
+  
   
   
   
@@ -1682,23 +1728,30 @@ header{
     opacity: 0;
 }
 
-@media(max-width: 968px) {
-
+@media(max-width: 948px) {
   .product {
     max-width: 300px;
-}
+  }
 
-.product h2 {
+  .product h2 {
     margin-top: 8px;
     font-size: 13px;
-}
+  }
 
-.img-container {
+  .img-container {
     width: 200px;
     height: 180px;
+  }
+
+  .img-container.auto-slide .hover-img {
+    opacity: 0;
+  }
+
+  .img-container.auto-slide .main-img {
+    opacity: 1;
+  }
 }
 
-}
 
 
 
