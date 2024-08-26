@@ -686,9 +686,6 @@ header{
     height: 20px;    /* Ajusta a altura dos botões */
     padding: 15px 0;
     display: inline-block;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
   }
 
   .prev,
@@ -700,6 +697,19 @@ header{
     top: 15%; /* Move as setas um pouco para baixo */
     /* transform: translateY(50%); */
   }
+
+  .arrowcontainer {
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
+
+  .arrow {
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
+
+  .arrow img{
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
+
   
 }
 
