@@ -268,7 +268,7 @@ header{
   
   .opcoes a{
       padding: 15px 22px;
-      font-size: 27px;
+      font-size: 24px;
       margin: 0px 5px;
   }
 
@@ -707,6 +707,11 @@ header{
     margin-top: 30px;
   }
 
+  .textabout h3 {
+    font-size: 18px;
+  }
+
+
   .arrowcontainer {
     display: none;
   }
@@ -895,14 +900,15 @@ header{
 }
 
 .sobrenos img {
+  margin-top: 30px;
   height: 230px;
   width: 230px;
-  margin-left: 30px;
+  margin-left: 45px;
   object-fit: cover;
 }
 
 .textabout h4 {
-  margin-right: 25px;
+  margin-right: -1px;
 }
 
 }
@@ -932,14 +938,15 @@ header{
 }
 
 .sobrenos img {
+  margin-top: 30px;
   height: 170px;
   width: 170px;
-  margin-left: 30px;
+  margin-left: 60px;
   object-fit: cover;
 }
 
 .textabout h4 {
-  margin-right: 25px;
+  margin-right: -3px;
 }
 
   
