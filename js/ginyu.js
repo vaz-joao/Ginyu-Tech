@@ -104,29 +104,82 @@ function toggleMenu() {
 }
 
 // Transição automatica mobile merch ===============//
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona todas as img-container
-    const imgContainers = document.querySelectorAll(".img-container");
+    let intervals = [];
+    
+    function applyAutoSlide() {
+        // Limpa todos os intervalos anteriores para evitar múltiplas execuções
+        intervals.forEach(interval => clearInterval(interval));
+        intervals = [];
 
-    imgContainers.forEach((container) => {
+        // Verifica se a largura da tela é igual ou inferior a 948px
+        if (window.innerWidth <= 948) {
+            // Seleciona todas as img-container
+            const imgContainers = document.querySelectorAll(".img-container");
+
+            imgContainers.forEach((container) => {
+                let mainImg = container.querySelector(".main-img");
+                let hoverImg = container.querySelector(".hover-img");
+                let isMainVisible = true;
+
+                // Define a transição automática a cada 5 segundos
+                const intervalId = setInterval(() => {
+                    if (isMainVisible) {
+                        mainImg.style.opacity = "0";
+                        hoverImg.style.opacity = "1";
+                    } else {
+                        mainImg.style.opacity = "1";
+                        hoverImg.style.opacity = "0";
+                    }
+                    isMainVisible = !isMainVisible;
+                }, 5000);
+
+                // Guarda o ID do intervalo para limpar mais tarde
+                intervals.push(intervalId);
+            });
+        } else {
+            // Para telas maiores que 948px, garante que a imagem principal esteja visível
+            const imgContainers = document.querySelectorAll(".img-container");
+            imgContainers.forEach((container) => {
+                let mainImg = container.querySelector(".main-img");
+                let hoverImg = container.querySelector(".hover-img");
+
+                // Restaura a opacidade da imagem principal
+                mainImg.style.opacity = "1";
+                hoverImg.style.opacity = "0";
+            });
+        }
+    }
+
+    // Aplica o auto-slide ao carregar a página
+    applyAutoSlide();
+
+    // Reaplica o auto-slide e restaura a imagem principal se necessário quando a janela for redimensionada
+    window.addEventListener('resize', function () {
+        applyAutoSlide();
+    });
+
+    // Adiciona o evento de hover manualmente
+    document.querySelectorAll('.img-container').forEach(container => {
         let mainImg = container.querySelector(".main-img");
         let hoverImg = container.querySelector(".hover-img");
-        let isMainVisible = true;
 
-        // Define a transição automática a cada 5 segundos
-        setInterval(() => {
-            if (isMainVisible) {
+        container.addEventListener('mouseenter', () => {
+            if (window.innerWidth > 948) {
                 mainImg.style.opacity = "0";
                 hoverImg.style.opacity = "1";
-            } else {
+            }
+        });
+
+        container.addEventListener('mouseleave', () => {
+            if (window.innerWidth > 948) {
                 mainImg.style.opacity = "1";
                 hoverImg.style.opacity = "0";
             }
-            isMainVisible = !isMainVisible;
-        }, 5000);
+        });
     });
 });
+
 
 
 
