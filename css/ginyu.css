@@ -946,7 +946,7 @@ header{
 }
 
 .textabout h4 {
-  font-size: 12;
+  font-size: 9;
   margin-right: -3px;
 }
 
@@ -1057,7 +1057,7 @@ header{
     margin-top: 7px; /* Espaço entre o texto e o nome do autor */
     margin-bottom: 0; /* Remove a margem inferior padrão do h1 */
     padding: 10px;
-    font-size: 10px;
+    font-size: 9px;
     /* margin-left: 200px; */
     font-family: 'EB Garamond', serif;
     color: rgb(248, 248, 248);  
@@ -1539,7 +1539,7 @@ header{
   
     .membro-info-content {
       position: absolute;
-      bottom: 20px;
+      bottom: 13px;
       left: 10px;
       right: 10px;
     }
@@ -1613,7 +1613,7 @@ header{
     }
     
     .membro-info-content {
-      bottom: 25px;
+      bottom: 13px;
       left: 15px;
       right: 15px;
     }
