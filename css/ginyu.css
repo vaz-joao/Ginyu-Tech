@@ -699,19 +699,6 @@ header{
     top: 15%; /* Move as setas um pouco para baixo */
     /* transform: translateY(50%); */
   }
-
-  .arrowcontainer {
-    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
-  }
-
-  .arrow {
-    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
-  }
-
-  .arrow img{
-    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
-  }
-
   
 }
 
