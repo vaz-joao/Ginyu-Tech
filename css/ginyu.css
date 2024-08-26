@@ -685,8 +685,8 @@ header{
     width: 100px;    /* Ajusta a largura dos botões */
     height: 20px;    /* Ajusta a altura dos botões */
     padding: 15px 0;
-    /* display: inline-block;
-    margin-top: 10px; */
+    display: inline-block;
+    margin-top: 10px;
   }
 
   .prev,
@@ -695,11 +695,23 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
+    top: 5%; /* Move as setas um pouco para baixo */
+    /* transform: translateY(50%); */
   }
 
   .arrowcontainer {
     display: none; /* Certifica-se de que a seta apareça em modo paisagem */
   }
+
+  .arrow {
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
+
+  .arrow img{
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
+  }
+
+  
 }
 
 
