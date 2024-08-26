@@ -48,7 +48,7 @@ function updateSlide() {
 }
 
 function startSlideInterval() {
-    slideInterval = setInterval(nextSlide, 6000); 
+    slideInterval = setInterval(nextSlide, 9000); 
 }
 
 function stopSlideInterval() {
@@ -93,6 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Menu Responsivo ================================//
+
 function toggleMenu() {
     var menuIcon = document.querySelector('.menu-icon');
     var opcoes = document.querySelector('.opcoes');
@@ -100,6 +102,32 @@ function toggleMenu() {
     menuIcon.classList.toggle('change');
     opcoes.classList.toggle('show');
 }
+
+// Transição automatica mobile merch ===============//
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona todas as img-container
+    const imgContainers = document.querySelectorAll(".img-container");
+
+    imgContainers.forEach((container) => {
+        let mainImg = container.querySelector(".main-img");
+        let hoverImg = container.querySelector(".hover-img");
+        let isMainVisible = true;
+
+        // Define a transição automática a cada 5 segundos
+        setInterval(() => {
+            if (isMainVisible) {
+                mainImg.style.opacity = "0";
+                hoverImg.style.opacity = "1";
+            } else {
+                mainImg.style.opacity = "1";
+                hoverImg.style.opacity = "0";
+            }
+            isMainVisible = !isMainVisible;
+        }, 5000);
+    });
+});
+
 
 
 
