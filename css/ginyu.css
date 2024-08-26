@@ -694,11 +694,11 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
-    top: 5%;
+    bottom: 2%;
   }
 
   .arrowcontainer {
-    height: 80%; /* Ajusta a posição da seta mais para cima */
+    height: 30%; /* Ajusta a posição da seta mais para cima */
   }
 }
 
