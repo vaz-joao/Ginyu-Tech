@@ -952,6 +952,13 @@ header{
   
 }
 
+@media (max-height: 400px) and (orientation: landscape) {
+  .textabout h3 {
+    font-size: 16px;
+  }
+
+}
+
 
 
 @font-face {
