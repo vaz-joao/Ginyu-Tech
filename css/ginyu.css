@@ -654,9 +654,10 @@ header{
     font-size: 21px;
   }
 
+
   .slide {
     width: 100%;
-    height: 87vh; 
+    height: 87vh; /* Aumenta a altura das imagens dos slides */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,13 +682,10 @@ header{
 
   .btnabout,
   .btnbook {
-    font-size: 12px; /* Diminui o tamanho dos botões */
-    width: 100px;    /* Ajusta a largura dos botões */
-    height: 20px;    /* Ajusta a altura dos botões */
+    font-size: 12px; 
+    width: 100px;
+    height: 20px;
     padding: 15px 0;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
   }
 
   .prev,
@@ -696,12 +694,13 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
-    top: 15%; /* Move as setas um pouco para baixo */
-    /* transform: translateY(50%); */
+    top: 5%;
   }
-  
-}
 
+  .arrowcontainer {
+    height: 80%; /* Ajusta a posição da seta mais para cima */
+  }
+}
 
 
 
