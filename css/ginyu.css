@@ -597,6 +597,15 @@ header{
   padding: 14px 0;
 }
 
+.btnabout {
+  border: solid #cdc6ff 1px;
+}
+
+
+.btnbook {
+  border: solid rgb(245, 217, 177) 1px;
+}
+
 .dotsContainer {
   display: none;
 }
@@ -634,27 +643,29 @@ header{
 @media (max-height: 400px) and (orientation: landscape) {
 
   header {
-    height: 80px;
+    height: 60px;
   }
 
   .logo img {
     height: 46px;
     padding: 0 15px;
   }
-  
   .logo p {
     font-size: 21px;
   }
 
   .slide {
     width: 100%;
-    height: 70vh; /* Aumenta a altura das imagens */
+    height: 265vh; /* Aumenta a altura das imagens dos slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .textbtncontainer {
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+    transform: translate(-50%, -50%); /* Centraliza os textos e botões */
     text-align: center;
   }
 
@@ -666,7 +677,6 @@ header{
   .text-overlay2 {
     font-size: 14px;
     max-width: 90%;
-    margin: 0 auto; /* Centraliza o texto */
   }
 
   .btnabout,
@@ -675,8 +685,8 @@ header{
     width: 100px;    /* Ajusta a largura dos botões */
     height: 20px;    /* Ajusta a altura dos botões */
     padding: 15px 0;
-    display: inline-block;
-    margin-top: 10px; /* Espaçamento entre os botões */
+    /* display: inline-block;
+    margin-top: 10px; */
   }
 
   .prev,
@@ -685,12 +695,10 @@ header{
     height: 35px;
     font-size: 22px;
     line-height: 35px;
-    top: 50%; /* Move as setas um pouco para baixo */
-    transform: translateY(50%);
   }
 
   .arrowcontainer {
-    display: block; /* Certifica-se de que a seta apareça em modo paisagem */
+    display: none; /* Certifica-se de que a seta apareça em modo paisagem */
   }
 }
 
