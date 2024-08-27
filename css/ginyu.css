@@ -705,6 +705,11 @@ header{
     font-size: 22px;
     line-height: 35px;
     margin-top: 30px;
+    padding-bottom: 1px;
+  }
+
+  .prev{
+    padding-left: 2px;
   }
 
   .textabout h3 {
