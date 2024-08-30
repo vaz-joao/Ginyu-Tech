@@ -394,7 +394,7 @@ header{
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  padding: 30px 0;
+  padding: 27px 0;
   text-decoration: none;
   transition: 1.0s;
   margin-bottom: 40px;
@@ -864,13 +864,13 @@ header{
   .textabout {
     color: rgb(145, 145, 145);
     font-family: "Raleway", sans-serif;
-    max-width: 485px;
+    max-width: 475px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 4px;
-    margin-left: 100px;
+    margin-left: 65px;
   }
 
 .textabout h3 {
@@ -882,7 +882,7 @@ header{
 
 .textabout h4 {
     margin-right: 50px;
-    font-size: 11px;
+    font-size: 13px;
     text-align: center;
 }
 
