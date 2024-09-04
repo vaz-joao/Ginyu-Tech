@@ -74,6 +74,12 @@ window.onload = function() {
 // Atualiza o slide inicial
 updateSlide();
 
+// Evento para os dots
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        showSlide(index);
+    });
+});
 
 let clickCount = 0;
 const logo = document.getElementById('logo');

@@ -5,7 +5,7 @@ html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     background: rgb(242, 242, 242);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 
@@ -235,6 +235,12 @@ header{
 }
 
 @media(max-width: 558px) {
+
+  html, body {
+    overflow-x: hidden;
+    
+}
+
 
   header{
     height: 70px;
