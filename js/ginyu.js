@@ -10,6 +10,7 @@ function showSlide(index) {
     currentSlide = index;
     updateSlide();
     moveSlides();
+    resetSlideInterval(); // Reseta o intervalo de transição automática
 }
 
 function nextSlide() {
@@ -17,7 +18,7 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     updateSlide();
     moveSlides();
-    startSlideInterval(); // Reinicia o intervalo de avanço automático após a navegação manual
+    resetSlideInterval(); // Reseta o intervalo de transição automática
 }
 
 function prevSlide() {
@@ -25,7 +26,7 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     updateSlide();
     moveSlides();
-    startSlideInterval(); // Reinicia o intervalo de avanço automático após a navegação manual
+    resetSlideInterval(); // Reseta o intervalo de transição automática
 }
 
 function moveSlides() {
@@ -39,7 +40,6 @@ function updateSlide() {
         if (index === currentSlide) {
             slide.classList.add('active');
             dots[index].classList.add('active');
-            stopSlideInterval();
         } else {
             slide.classList.remove('active');
             dots[index].classList.remove('active');
@@ -55,6 +55,11 @@ function stopSlideInterval() {
     clearInterval(slideInterval); // Para o intervalo de avanço automático dos slides
 }
 
+function resetSlideInterval() {
+    stopSlideInterval(); // Para o intervalo anterior
+    startSlideInterval(); // Reinicia o intervalo de avanço automático
+}
+
 // Adiciona um listener de evento para detectar mudanças no tamanho da tela
 window.addEventListener('resize', function() {
     moveSlides();
@@ -68,6 +73,7 @@ window.onload = function() {
 
 // Atualiza o slide inicial
 updateSlide();
+
 
 let clickCount = 0;
 const logo = document.getElementById('logo');
