@@ -1536,6 +1536,7 @@ header{
       width: 200px;
       height: 200px;
       object-fit: cover;
+      border: solid #aaaaaa 3px;
     }
   
     .membro-info {
