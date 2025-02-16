@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
             preloader.style.display = 'none';
             document.body.style.overflow = 'auto'; // Reabilita a rolagem
         }, 500);
-    }, 2000);
+    }, 2500);
 });

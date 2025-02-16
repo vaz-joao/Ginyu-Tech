@@ -15,6 +15,7 @@ header {
     padding: 10px 20px;
     background-color: #232323;
     display: flex;
+    z-index: 1;
 }
 
 nav {
@@ -30,6 +31,11 @@ nav div a {
     color: white;
     margin-right: 40px;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+nav div a:hover{
+    color: #00f1a5;
 }
 
 .logo img {
@@ -53,13 +59,24 @@ nav div a {
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
+    transition: 1.0s;
+}
+
+.nav-right .premium-btn:hover {
+    background-color: #019d6c;
 }
 
 .nav-right .login {
     color: #00c285;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
 }
+
+.nav-right .login:hover {
+    color: #019d6c;
+}
+
 
 /* Banner */
 .banner {
@@ -86,6 +103,11 @@ nav div a {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-red:hover {
+    background-color: #fa3a44;
 }
 
 /* Barra de pesquisa */
@@ -108,11 +130,24 @@ nav div a {
     background-color: #00b0a3;
     color: white;
     height: 45px;
+    width: 50px;
     border: none;
-    padding: 10px 20px;
     border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.btn-search i {
+    font-size: 20px;
+}
+
+.btn-search:hover{
+    background-color: #028c83;
+}
+
 
 /* Seção de quizzes */
 .quizzes-highlight {
@@ -125,6 +160,27 @@ nav div a {
     font-size: 2rem;
 }
 
+.quizzes-highlight h2 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #00c285, #ce0610);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-move 15s linear infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradient-move {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
 .quiz-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -136,11 +192,17 @@ nav div a {
     color: white;
     border-radius: 10px;
     text-align: center;
+    transition: 0.5s;
 }
 
 .quiz img {
     width: 80%;
     border-radius: 20px;
+    transition: 1.0s;
+}
+
+.quiz img:hover {
+    transform: scale(1.05);
 }
 
 .quiz p {
