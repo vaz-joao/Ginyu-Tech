@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-image: url(../img/img_login/fundologin2.jpeg); */
-    background-size: 100%;
-}
-
 /* Estiliza o vídeo de fundo */
 #bg-video {
     position: fixed;
@@ -20,7 +15,6 @@ body{
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
-
 .form_container{
     height: 100vh;
     width: 100%;
@@ -31,32 +25,42 @@ body{
 }
 
 /* Formulário */
-.formlogin{
+.formcadastro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
     height: 560px;
-    width: 450px;
+    width: 750px;
     background-color: #83e1dd;
     opacity: 0.8;
     border-radius: 20px;
     box-shadow: 3px 3px 3px rgba(84, 74, 158, 0.9);
+    
 }
 
-.formlogin img{
-    height: 180px;
+.cadtitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
 }
 
-.formlogin h1{
+.formcadastro h1{
+    color:#ce0610;
+}
+
+.formcadastro h2{
     color:#066966;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 /* Caixa de texto */
-.formlogin input{
+.formcadastro input{
     height: 45px;
-    width: 370px;
+    width: 310px;
     gap: 20px;
     border-radius: 10px;
     background-color: #41b4af;
@@ -73,14 +77,32 @@ input:focus {
 
 
 
-.formlogin input::placeholder {
+.formcadastro input::placeholder {
     color: #ffffff;
     opacity: 0.7;
 }
 
-/* Botões */
-.formlogin input[type="submit"]{
-    width: 200px;
+
+.formduo{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.formcadastro p{
+    color: #066966;
+    font-weight: bold;
+}
+
+.cadinput{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.formcadastro input[type="submit"]{
+    width: 280px;
     cursor: pointer;
     background-color: #ce0610;
     font-style: bold;
@@ -88,34 +110,14 @@ input:focus {
     padding-left: 0;
     transition: 0.5s;
     font-size: 18px;
-    margin: 15px 0 5px 0;
-
+    border-radius: 30px;
+    margin-top: 5px;
 }
 
-.formlogin input[type="submit"]:hover{
+.formcadastro input[type="submit"]:hover{
     background-color: #910108;
 }
 
-
-.optlogin{
-    display: flex;
-    gap: 160px;
-    text-decoration: underline;
-    cursor: pointer;
-    color: #066966;
-    transition: 0.5s;
-}
-
-.optlogin p{
-    text-decoration: underline;
-    color: #066966;
-    transition: 0.5s;
-}
-
-
-.optlogin p:hover{
-    color: #019d6c;
-}
 
 .btn_back img{
     height: 40px;
@@ -128,4 +130,3 @@ input:focus {
     filter: brightness(1.5); 
     transform: scale(1.05);
 }
-

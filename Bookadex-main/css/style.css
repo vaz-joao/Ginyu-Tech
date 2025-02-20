@@ -77,6 +77,17 @@ nav div a:hover{
     color: #019d6c;
 }
 
+.nav-right .cadastro {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-right .cadastro:hover {
+    color: #bebebe;
+}
+
 
 /* Banner */
 .banner {
