@@ -86,12 +86,12 @@
   }
 
   .altborder.correct {
-    background-color: #4CAF50 !important; /* Verde */
+    background-color: #4CAF50 !important;
     color: white;
   }
   
   .altborder.incorrect {
-    background-color: #f44336 !important; /* Vermelho */
+    background-color: #f44336 !important;
     color: white;
   }
   
@@ -101,10 +101,10 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 15px; /* Espaço entre a mensagem e o botão */
+    gap: 15px;
   }
   
-  .feedback {
+  .feedback{
     font-weight: bold;
     font-size: 18px;
   }
