@@ -13,7 +13,7 @@ header {
     top: 0;
     width: 100%;
     padding: 10px 20px;
-    background-color: #232323;
+    background-color: #161616;
     display: flex;
     z-index: 1;
 }
@@ -55,7 +55,7 @@ nav div a:hover{
 
 .nav-right .premium-btn {
     background-color: #00c285;
-    color: #232323;
+    color: #161616;
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
@@ -91,7 +91,7 @@ nav div a:hover{
 
 /* Banner */
 .banner {
-    background: url('../img/banner.png') no-repeat center/cover;
+    background: url('../img/octaviobanner1.png') no-repeat center/cover;
     width: auto;
     height: auto;
     padding: 300px 0;
