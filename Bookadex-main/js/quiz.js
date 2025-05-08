@@ -30,6 +30,12 @@ document.querySelectorAll('.quiz').forEach(quiz => {
             selecionada.classList.add('incorrect');
             feedback.textContent = 'Resposta incorreta!';
             feedback.style.color = '#f44336';
+
+            // ➕ Mostrar a alternativa correta
+            const correta = quiz.querySelector('.altborder[data-correct="true"]');
+            if (correta) {
+                correta.classList.add('correct');
+            }
         }
 
         botaoResponder.parentElement.insertBefore(feedback, botaoResponder);

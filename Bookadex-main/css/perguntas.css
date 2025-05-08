@@ -15,6 +15,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .imgprofile:hover{
@@ -75,6 +76,7 @@
     margin: 20px 0;
     padding: 15px;
     cursor: pointer;
+    transition: 0.6s;
 }
 
 .altborder.selected {
@@ -88,11 +90,13 @@
   .altborder.correct {
     background-color: #4CAF50 !important;
     color: white;
+    transition: 0.9s;
   }
   
   .altborder.incorrect {
     background-color: #f44336 !important;
     color: white;
+    transition: 0.6s;
   }
   
   .conf {
@@ -104,7 +108,7 @@
     gap: 15px;
   }
   
-  .feedback{
+  .feedback {
     font-weight: bold;
     font-size: 18px;
   }
