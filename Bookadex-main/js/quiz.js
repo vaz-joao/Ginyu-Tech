@@ -5,9 +5,14 @@ document.querySelectorAll('.quiz').forEach(quiz => {
 
     alternativas.forEach(alt => {
         alt.addEventListener('click', () => {
-            alternativas.forEach(a => a.classList.remove('selected'));
-            alt.classList.add('selected');
-            selecionada = alt;
+            if (alt.classList.contains('selected')) {
+                alt.classList.remove('selected');
+                selecionada = null;
+            } else {
+                alternativas.forEach(a => a.classList.remove('selected'));
+                alt.classList.add('selected');
+                selecionada = alt;
+            }
         });
     });
 
