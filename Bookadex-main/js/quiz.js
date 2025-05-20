@@ -14,6 +14,7 @@ document.querySelectorAll('.quiz').forEach(quiz => {
                 selecionada = alt;
             }
         });
+        
     });
 
     botaoResponder.addEventListener('click', () => {
